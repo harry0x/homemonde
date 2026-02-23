@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeMonde - Premium Home Textiles</title>
+  <meta name="description" content="Premium home textiles crafted with care. Transform your space with our curated collection of curtains, bedsheets, and décor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>USE CODE <strong>HOMEMONDE5</strong> FOR EXTRA DISCOUNT AT CHECKOUT</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a href="#" class="logo"><span style="color: var(--primary-color);">Home</span>Monde</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#">LIVING</a>
+        <a href="#">BEDDING</a>
+        <a href="#">FLOORING</a>
+        <a href="#">KIDS</a>
+        <a href="#">GIFTING</a>
+        <a href="#">OFFERS</a>
+      </nav>
+      <div class="nav-icons">
+        <button class="icon-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="icon-btn hide-on-mobile" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+        <button class="icon-btn hide-on-mobile" aria-label="Account"><i class="far fa-user"></i></button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Dropdown (Pushes content down) -->
+    <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
+      <div class="container">
+        <nav class="mobile-nav-links">
+          <a href="#">LIVING</a>
+          <a href="#">BEDDING</a>
+          <a href="#">FLOORING</a>
+          <a href="#">KIDS</a>
+          <a href="#">GIFTING</a>
+          <a href="#">OFFERS</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-banner.jpg" alt="HomeMonde Hero - Elegant Living Room" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tagline">NEW COLLECTION 2025</span>
+        <h1 class="hero-heading">Elegance That<br/>Lives Beyond<br/>Trends</h1>
+        <p class="hero-subtext">Premium home textiles crafted with care. Transform<br/>your space with our curated collection of curtains,<br/>bedsheets, and décor.</p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right" style="margin-left: 4px;"></i></a>
+          <a href="#" class="btn btn-outline">Explore Collections</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section class="categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Curated For You</span>
+        <h2 class="section-title">Shop by Category</h2>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/ct-1.jpg" alt="Curtains" />
+          </div>
+          <div class="category-overlay">
+            <h3>Curtains</h3>
+            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/ct-2.jpg" alt="Bedsheets" />
+          </div>
+          <div class="category-overlay">
+            <h3>Bedsheets</h3>
+            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/ct-3.jpg" alt="Blankets" />
+          </div>
+          <div class="category-overlay">
+            <h3>Blankets</h3>
+            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/ct-4.jpg" alt="Cushion Covers" />
+          </div>
+          <div class="category-overlay">
+            <h3>Cushion Covers</h3>
+            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/ct-5.jpg" alt="Fitted Sheets" />
+          </div>
+          <div class="category-overlay">
+            <h3>Fitted Sheets</h3>
+            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-img">
+            <img src="images/ct-6.jpg" alt="Dohars" />
+          </div>
+          <div class="category-overlay">
+            <h3>Dohars</h3>
+            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Handpicked</span>
+        <h2 class="section-title">Featured Products</h2>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/ft-1.jpg" alt="Linen Sheer Curtains" />
+            <span class="product-badge badge-bestseller">Best Seller</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Linen Sheer Curtains</h3>
+            <div class="product-price">
+              <span class="price-current">₹1,299</span>
+              <span class="price-original">₹1,799</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/ft-2.jpg" alt="Premium Cotton Bedsheet Set" />
+            <span class="product-badge badge-new">New</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Premium Cotton Bedsheet Set</h3>
+            <div class="product-price">
+              <span class="price-current">₹999</span>
+              <span class="price-original">₹1,499</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/ft-3.jpg" alt="Fitted Elastic Bedsheet" />
+            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Fitted Elastic Bedsheet</h3>
+            <div class="product-price">
+              <span class="price-current">₹849</span>
+              <span class="price-original">₹1,199</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/ft-4.jpg" alt="Floral Print Dohar" />
+            <span class="product-badge badge-trending">Trending</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Floral Print Dohar</h3>
+            <div class="product-price">
+              <span class="price-current">₹1,199</span>
+              <span class="price-original">₹1,599</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-image">
+          <img src="images/our-story.jpg" alt="Our Story" />
+        </div>
+        <div class="story-content">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Crafted With Care, Designed For You</h2>
+          <p>At HomeMonde, we believe your home deserves the finest textiles. Every product is thoughtfully designed to blend comfort with elegance, turning everyday living into a luxurious experience.</p>
+          <p>From handpicked fabrics to artisan-inspired patterns, our collections bring warmth and character to every corner of your home. Experience the difference that quality makes.</p>
+          <a href="#" class="btn btn-primary" style="background-color: var(--primary-color);">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What Our Customers Say</span>
+        <h2 class="section-title">Loved by Thousands</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The quality of the curtains exceeded my expectations. They transformed my living room completely. Will definitely be ordering more!"</p>
+          <div class="testimonial-author">
+            <div>
+              <h4>Priya Sharma</h4>
+              <span>Mumbai, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Best bedsheets I've ever purchased. The cotton is incredibly soft and the colors haven't faded even after multiple washes. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <div>
+              <h4>Ankit Verma</h4>
+              <span>Delhi, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Found the perfect cushion covers for my new apartment. The designs are elegant and the quality is premium. Outstanding customer service too!"</p>
+          <div class="testimonial-author">
+            <div>
+              <h4>Sneha Patel</h4>
+              <span>Bangalore, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="section-title">Stay In The Loop</h2>
+        <p>Subscribe to our newsletter for exclusive deals, new arrivals, and home styling tips delivered to your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" class="newsletter-input" />
+          <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h3 class="footer-logo">HomeMonde</h3>
+          <p>Premium home textiles crafted with love.<br>Making every home beautiful since 2020.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="#">Curtains</a></li>
+            <li><a href="#">Bedsheets</a></li>
+            <li><a href="#">Blankets</a></li>
+            <li><a href="#">Cushion Covers</a></li>
+            <li><a href="#">Dohars</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>HELP</h4>
+          <ul>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchange</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HomeMonde. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
